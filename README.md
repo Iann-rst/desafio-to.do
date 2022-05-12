@@ -15,7 +15,7 @@ As funcionalidades do aplicativo são:
 - React Native 0.64;
 - TypeScript;
 
-### 📷  ScreenShots
+### 📷  Screenshots
 
 <div align="center">
   <img alt="Home Page" src=".github/screenshot1.jpeg" height=300/>
@@ -25,7 +25,7 @@ As funcionalidades do aplicativo são:
 </div>
 
 
-### Screenshot: Testes
+### 📷  Screenshot: Testes
 
 <div align="center">
   <img alt="Execução dos testes" src=".github/screenshot_teste.jpg"/>
