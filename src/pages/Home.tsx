@@ -37,11 +37,22 @@ export function Home() {
 
   }
 
+  //Remover uma tarefa
   function handleRemoveTask(id: number) {
     //TODO - remove task from state
-    const tasksClone = [...tasks];
-    const newTasks = tasksClone.filter(task => task.id !== id);
-    setTasks(newTasks);
+    Alert.alert(
+      'Remover item',
+      'Tem certeza que você deseja remover esse item?',
+      [{ text: 'Não' },
+      {
+        text: 'Sim',
+        onPress: () => {
+          const tasksClone = [...tasks];
+          const newTasks = tasksClone.filter(task => task.id !== id);
+          setTasks(newTasks)
+        }
+      }
+      ])
   }
 
   return (
