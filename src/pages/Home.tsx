@@ -10,6 +10,7 @@ export function Home() {
 
 
   function handleAddTask(newTaskTitle: string) {
+    //TODO - add new task
     const newTask: Task = {
       id: new Date().getTime(),
       title: newTaskTitle,
@@ -24,6 +25,9 @@ export function Home() {
 
   function handleRemoveTask(id: number) {
     //TODO - remove task from state
+    const tasksClone = [...tasks];
+    const newTasks = tasksClone.filter(task => task.id !== id);
+    setTasks(newTasks);
   }
 
   return (
