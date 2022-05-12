@@ -13,6 +13,7 @@ export function Home() {
   function handleAddTask(newTaskTitle: string) {
     //TODO - add new task
     const taskWithSameName = tasks.find(task => task.title === newTaskTitle);
+
     if (taskWithSameName) {
       Alert.alert('Task já cadastrada', 'Você não pode cadastrar uma task com o mesmo nome')
       return
