@@ -5,6 +5,12 @@ import { Header } from '../components/Header';
 import { Task, TasksList } from '../components/TasksList';
 import { TodoInput } from '../components/TodoInput';
 
+
+export type EditTaskProps = {
+  newTaskTitle: string;
+  id: number;
+}
+
 export function Home() {
   const [tasks, setTasks] = useState<Task[]>([]);
 
@@ -19,7 +25,6 @@ export function Home() {
       return
     }
 
-
     const newTask: Task = {
       id: new Date().getTime(),
       title: newTaskTitle,
@@ -28,6 +33,7 @@ export function Home() {
     setTasks([...tasks, newTask]);
   }
 
+  //Marcar e desmarcar tarefa como feita
   function handleToggleTaskDone(id: number) {
     //TODO - toggle task done if exists
     const tasksClone = [...tasks];
@@ -55,16 +61,25 @@ export function Home() {
       ])
   }
 
+  //Editar uma tarefa
+  function handleEditTask({ id, newTaskTitle }: EditTaskProps) {
+    //TODO - edite title task
+    const tasksClone = [...tasks]
+    const index = tasksClone.findIndex(task => task.id === id);
+    tasksClone[index].title = newTaskTitle;
+    setTasks(tasksClone);
+
+  }
+
   return (
     <View style={styles.container}>
       <Header tasksCounter={tasks.length} />
-
       <TodoInput addTask={handleAddTask} />
-
       <TasksList
         tasks={tasks}
         toggleTaskDone={handleToggleTaskDone}
         removeTask={handleRemoveTask}
+        editTask={handleEditTask}
       />
     </View>
   )
