@@ -27,7 +27,7 @@ As funcionalidades do aplicativo são:
   <img alt="Execução dos testes" src=".github/screenshot_teste.jpg"/>
 </div>
 
-### Desafio 02
+### 🚀 Desafio 02
 Essa será uma continuação da aplicação de lembrete de tarefas desenvolvida no desafio anterior, onde você vai treinar um pouco mais sobre propriedades e componentização no React.
 As funcionalidades do aplicativo são:
 - Edição de uma tarefa;
@@ -42,7 +42,7 @@ As funcionalidades do aplicativo são:
   <img alt="Editar uma tarefa" src=".github/screenshot_desafio02_3.jpeg" height=300/>
 </div>
 
-### Tecnologias
+### 👨‍💻 Tecnologias
 - React Native 0.64;
 - TypeScript;
 
