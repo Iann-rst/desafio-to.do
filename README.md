@@ -11,10 +11,6 @@ As funcionalidades do aplicativo são:
   - Remover uma tarefa;
   - Marcar e desmarcar uma tarefa como concluída
 
-### Tecnologias
-- React Native 0.64;
-- TypeScript;
-
 ### 📷  Screenshots
 
 <div align="center">
@@ -31,4 +27,22 @@ As funcionalidades do aplicativo são:
   <img alt="Execução dos testes" src=".github/screenshot_teste.jpg"/>
 </div>
 
+### Desafio 02
+Essa será uma continuação da aplicação de lembrete de tarefas desenvolvida no desafio anterior, onde você vai treinar um pouco mais sobre propriedades e componentização no React.
+As funcionalidades do aplicativo são:
+- Edição de uma tarefa;
+- Exibir alerta pedindo confirmação ao remover uma tarefa;
+- Exibir alerta ao tentar adicionar tarefa com o mesmo nome;
+
+### 📷 Screenshots: Desafio 02
+
+<div align="center">
+  <img alt="Alerta ao tentar add tarefa com o mesmo nome" src=".github/screenshot_desafio02_1.jpeg" height=300/>
+  <img alt="Alerta pedindo confirmação ao remover uma tarefa" src=".github/screenshot_desafio02_2.jpeg" height=300/>
+  <img alt="Editar uma tarefa" src=".github/screenshot_desafio02_3.jpeg" height=300/>
+</div>
+
+### Tecnologias
+- React Native 0.64;
+- TypeScript;
 
